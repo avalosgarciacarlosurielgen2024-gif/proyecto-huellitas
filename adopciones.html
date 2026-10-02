@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Huellitas Comunitarias - Adopciones</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            background-color: #f5ead8;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #285943;
+            padding: 15px 30px;
+            box-sizing: border-box;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .subtitulo {
+            color: white;
+            margin: 5px 0 0 0;
+        }
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: #4a3728;
+            background-color: white;
+            padding: 9px 18px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .boton-nav:hover {
+            background-color: #e8f1e9;
+        }
+
+        .boton-nav.activo {
+            background-color: #c48a5a;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            gap: 30px;
+            padding: 30px;
+            box-sizing: border-box;
+            flex: 1;
+            width: 100%;
+        }
+
+        aside {
+            width: 25%;
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        aside .imagen {
+            font-size: 90px;
+            background-color: #e8f1e9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        aside h2 {
+            color: #285943;
+        }
+
+        aside p {
+            color: #4a3728;
+            line-height: 1.5;
+        }
+
+        section {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        article {
+            width: 100%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        article h1 {
+            color: #285943;
+        }
+
+        article p {
+            color: #4a3728;
+            line-height: 1.6;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .animal {
+            background-color: #f5ead8;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .animal-imagen {
+            font-size: 80px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .animal h2 {
+            color: #285943;
+        }
+
+        .animal p {
+            margin: 8px 0;
+        }
+
+        .boton-adoptar {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #285943;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .boton-adoptar:hover {
+            background-color: #4a3728;
+        }
+
+        .mensaje {
+            background-color: #e8f1e9;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            border-left: 6px solid #285943;
+        }
+
+        .mensaje h2 {
+            color: #285943;
+        }
+
+        .regresar {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .boton {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #285943;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 5px;
+        }
+
+        .boton:hover {
+            background-color: #4a3728;
+        }
+
+        footer {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        footer p {
+            margin: 5px;
+            font-size: 14px;
+            color: #4a3728;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .barra-navegacion {
+                flex-direction: column;
+            }
+
+            main {
+                flex-direction: column;
+            }
+
+            aside,
+            section {
+                width: 100%;
+            }
+
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+
+            <h1>🐾 Huellitas Comunitarias</h1>
+
+            <p class="subtitulo">
+                Adopta, cambia una vida
+            </p>
+
+            <nav class="barra-navegacion">
+
+                <a href="index.html" class="boton-nav">
+                    Inicio
+                </a>
+
+                <a href="adopciones.html" class="boton-nav activo">
+                    Adopciones
+                </a>
+
+                <a href="donaciones.html" class="boton-nav">
+                    Donaciones
+                </a>
+
+            </nav>
+
+        </div>
+
+        <div class="logo">
+            🐶
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <aside>
+
+            <div class="imagen">
+                🐕 ❤️
+            </div>
+
+            <h2>Adopta con amor</h2>
+
+            <p>
+                Todos los animales merecen una familia
+                donde puedan recibir cariño, cuidado
+                y protección.
+            </p>
+
+            <p>
+                Adoptar es una responsabilidad que
+                cambia dos vidas: la tuya y la de tu mascota.
+            </p>
+
+        </aside>
+
+
+        <section>
+
+            <article>
+
+                <h1>🐾 Animales en adopción</h1>
+
+                <p>
+                    Conoce algunos de los perros y gatos que
+                    están buscando un hogar responsable.
+                </p>
+
+
+                <div class="galeria">
+
+
+                    <div class="animal">
+
+                        <div class="animal-imagen">
+                            🐶
+                        </div>
+
+                        <h2>Luna</h2>
+
+                        <p>
+                            Perrita cariñosa y juguetona.
+                        </p>
+
+                        <p>
+                            <strong>Edad:</strong> 2 años
+                        </p>
+
+                        <p>
+                            <strong>Especie:</strong> Perro
+                        </p>
+
+                        <a href="#" class="boton-adoptar">
+                            Quiero conocerla
+                        </a>
+
+                    </div>
+
+
+                    <div class="animal">
+
+                        <div class="animal-imagen">
+                            🐕
+                        </div>
+
+                        <h2>Max</h2>
+
+                        <p>
+                            Perro tranquilo, amigable
+                            y cariñoso.
+                        </p>
+
+                        <p>
+                            <strong>Edad:</strong> 3 años
+                        </p>
+
+                        <p>
+                            <strong>Especie:</strong> Perro
+                        </p>
+
+                        <a href="#" class="boton-adoptar">
+                            Quiero conocerlo
+                        </a>
+
+                    </div>
+
+
+                    <div class="animal">
+
+                        <div class="animal-imagen">
+                            🐱
+                        </div>
+
+                        <h2>Milo</h2>
+
+                        <p>
+                            Gato curioso, tranquilo
+                            y cariñoso.
+                        </p>
+
+                        <p>
+                            <strong>Edad:</strong> 1 año
+                        </p>
+
+                        <p>
+                            <strong>Especie:</strong> Gato
+                        </p>
+
+                        <a href="#" class="boton-adoptar">
+                            Quiero conocerlo
+                        </a>
+
+                    </div>
+
+
+                    <div class="animal">
+
+                        <div class="animal-imagen">
+                            🐈
+                        </div>
+
+                        <h2>Nala</h2>
+
+                        <p>
+                            Gatita tranquila y juguetona.
+                        </p>
+
+                        <p>
+                            <strong>Edad:</strong> 2 años
+                        </p>
+
+                        <p>
+                            <strong>Especie:</strong> Gato
+                        </p>
+
+                        <a href="#" class="boton-adoptar">
+                            Quiero conocerla
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="mensaje">
+
+                    <h2>❤️ ¿Quieres adoptar?</h2>
+
+                    <p>
+                        Antes de adoptar recuerda que una mascota
+                        necesita alimento, atención veterinaria,
+                        espacio, tiempo y mucho cariño.
+                    </p>
+
+                    <p>
+                        La adopción responsable ayuda a que los
+                        animales tengan una vida segura y feliz.
+                    </p>
+
+                </div>
+
+
+                <div class="regresar">
+
+                    <a href="index.html" class="boton">
+                        🏠 Regresar al inicio
+                    </a>
+
+                    <a href="donaciones.html" class="boton">
+                        📦 Ver donaciones
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Creado para el proyecto PAEC -
+            Huellitas Comunitarias
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

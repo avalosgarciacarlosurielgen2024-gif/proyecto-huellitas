@@ -37,15 +37,25 @@
         }
 
         .logo {
-            width: 70px;
-            height: 70px;
-            background-color: white;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 42px;
-        }
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 3px solid white;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
 
         .barra-navegacion {
             display: flex;
@@ -81,30 +91,40 @@
             width: 100%;
         }
 
-        aside {
-            width: 25%;
-            background-color: white;
-            padding: 20px;
-            box-sizing: border-box;
-            border-radius: 8px;
-            text-align: center;
-        }
+       aside {
+    width: 25%;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #8b5e3c;
+}
 
-        aside .imagen {
-            font-size: 100px;
-            background-color: #e8f1e9;
-            padding: 25px;
-            border-radius: 10px;
-        }
+aside h2 {
+    color: #5c3a21;
+    margin-top: 0;
+    font-size: 22px;
+}
 
-        aside h2 {
-            color: #285943;
-        }
+aside img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto 15px auto;
+}
 
-        aside p {
-            color: #4a3728;
-            line-height: 1.5;
-        }
+aside h3 {
+    color: #5c3a21;
+    font-size: 18px;
+}
+
+aside p {
+    color: #333;
+    line-height: 1.5;
+}
 
         section {
             width: 75%;
@@ -243,28 +263,31 @@
         </div>
 
         <div class="logo">
-            🐶
-        </div>
+    <img src="imagenes/images.jpg" alt="Logo de Huellitas Comunitarias">
+</div>
 
     </header>
 
 
     <main>
 
-        <aside>
+       <aside class="anuncio">
+     <img src="imagenes/cafe.jpg" alt="Anuncio de Café Express">
 
-            <div class="imagen">
-                🐕 🐈
-            </div>
+    <h3>¡Un café para cada momento!</h3>
 
-            <h2>Huellitas Comunitarias</h2>
+    <p>
+        Disfruta de nuestro delicioso café
+    </p>
 
-            <p>
-                Un proyecto dedicado al bienestar,
-                cuidado y protección de los animales.
-            </p>
 
-        </aside>
+    <p>☕ Café= $2 dolares</p>
+
+    <a href="#" class="boton-anuncio">
+        Ver promoción
+    </a>
+</aside>
+</aside>
 
 
         <section>

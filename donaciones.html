@@ -81,25 +81,55 @@
             width: 100%;
         }
 
-        aside {
-            width: 25%;
-            background-color: white;
-            padding: 20px;
-            box-sizing: border-box;
-            border-radius: 8px;
-            text-align: center;
-        }
+    .aside {
+width: 100%;
+min-height: 700px;
+padding: 15px;
+box-sizing: border-box;
+background-color: white;
+border-radius: 12px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
-        aside .imagen {
-            font-size: 90px;
-            background-color: #e8f1e9;
-            padding: 20px;
-            border-radius: 10px;
-        }
+.aside img {
+width: 100%;
+max-height: 600px;
+object-fit: contain;
+border-radius: 8px;
+}
 
-        aside h2 {
-            color: #285943;
-        }
+.aside h2 {
+color: #285943;
+font-size: 25px;
+margin: 15px 0 10px;
+}
+
+.aside p {
+color: #4a3728;
+font-size: 17px;
+line-height: 1.6;
+margin: 8px 0;
+}
+
+.aside .boton {
+display: inline-block;
+margin-top: 15px;
+padding: 12px 20px;
+background-color: #285943;
+color: white;
+text-decoration: none;
+border-radius: 6px;
+}
+
+.aside .boton:hover {
+background-color: #4a3728;
+}
+
+
+
 
         aside p {
             color: #4a3728;
@@ -268,20 +298,21 @@
 
         <aside>
 
-            <div class="imagen">
-                🐶 📦
-            </div>
+            <aside>
 
-            <h2>Ayúdanos</h2>
+<h2>¿En qué se convierte tu donativo?</h2>
 
-            <p>
-                Tu donación puede ayudar a proporcionar
-                alimento, limpieza y cuidados para los animales.
-            </p>
+<img src="imagenes/donaciones.jpg"
+     alt="Infografía sobre el uso de las donaciones para ayudar a los animales"
+     class="imagen-donativos">
 
-            <p>
-                Cada pequeña ayuda puede hacer una gran diferencia.
-            </p>
+<p>
+    Tu apoyo ayuda a proporcionar recursos y cuidados
+    para mejorar la vida de los animales.
+</p>
+<p> <strong>¡Adopta, cuida y comparte amor!</strong> </p> <a href="donaciones.html" class="boton"> ❤️ Ayúdanos </a>
+
+</aside>
 
         </aside>
 

@@ -62,27 +62,49 @@
             margin: auto;
         }
 
-        aside {
-            background-color: #e2ead9;
-            padding: 22px;
-            border-radius: 12px;
-            height: fit-content;
-        }
+        .aside {
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    border: 2px solid #8b5e3c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    height: fit-content;
+}
 
-        aside h2 {
-            color: #354f32;
-            margin-bottom: 12px;
-        }
+.aside h2 {
+    color: #354f32;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
 
-        aside p {
-            margin-bottom: 15px;
-        }
+.aside img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: #f5f1e8;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
 
-        aside ul {
-            padding-left: 20px;
-            margin-bottom: 20px;
-        }
+.aside h3 {
+    color: #52734d;
+    margin-bottom: 10px;
+}
 
+.aside p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.aside .precio {
+    color: #8b5e3c;
+    font-weight: bold;
+}
+
+.aside .boton {
+    margin-top: 5px;
+}
         .boton {
             display: inline-block;
             background-color: #52734d;
@@ -227,20 +249,29 @@
     <div class="contenedor">
 
         <aside>
-            <h2>¿Por qué adoptar?</h2>
-            <p>Adoptar una mascota es darle una segunda oportunidad y ofrecerle un hogar lleno de cariño.</p>
+            
+<aside class="aside">
+    <h2>🐾 ¡Consiente a tu mascota!</h2>
 
-            <ul>
-                <li>Salvas una vida.</li>
-                <li>Brindas amor y compañía.</li>
-                <li>Promueves la adopción responsable.</li>
-                <li>Ayudas a otros animales.</li>
-            </ul>
+    <img src="imagenes/anuncio-mascotas.jpg"
+         alt="Anuncio de productos para mascotas">
 
-            <h2>Requisitos</h2>
-            <p>Para adoptar, debes comprometerte a cuidar, alimentar y proteger a tu nueva mascota.</p>
+    <h3>Pet Shop Huellitas</h3>
 
-            <a class="boton" href="#contacto">Quiero adoptar</a>
+    <p>
+        Encuentra alimento, juguetes y accesorios
+        para consentir a tus mejores amigos.
+    </p>
+
+    <p class="precio">
+        ❤️ ¡Todo para el cuidado de tus mascotas!
+    </p>
+
+    <a href="donaciones.html" class="boton">
+        Conoce más
+    </a>
+</aside>
+
         </aside>
 
         <main id="mascotas">
@@ -318,8 +349,8 @@
                         <img src="imagenes/mia.jpg" alt="Mia, gatita en adopción">
                     </div>
                     <h3>Mia</h3>
-                    <p>Edad: 3 años</p>
-                    <p>Personalidad: Cariñosa, tranquila y dulce.</p>
+                    <p>Edad: 7 meses</p>
+                    <p>Personalidad: es muy tranquila e inteligente, convive con todo tipo de perros y gatos.</p>
                     <a class="boton" href="#contacto">Adoptar a Mia</a>
                 </article>
 
@@ -328,8 +359,8 @@
                         <img src="imagenes/toby.jpg" alt="Toby, perro en adopción">
                     </div>
                     <h3>Toby</h3>
-                    <p>Edad: 2 años</p>
-                    <p>Personalidad: Divertido, sociable y juguetón.</p>
+                    <p>Edad: 4 meses</p>
+                    <p>Personalidad: dulce ,obediente ,sociable.</p>
                     <a class="boton" href="#contacto">Adoptar a Toby</a>
                 </article>
 
